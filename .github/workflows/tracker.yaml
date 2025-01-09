@@ -25,6 +25,8 @@ jobs:
             any::tidyr
             any::tidyverse
             any::janitor
+            any::readr
+            any::knitr
 
       - name: Execute Script
         run: |
