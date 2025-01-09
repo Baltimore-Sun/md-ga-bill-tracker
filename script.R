@@ -5,7 +5,7 @@ library(tidyr)
 ga2025 <- read_csv("https://mgaleg.maryland.gov/2025rs/misc/billsmasterlist/BillMasterList.csv") %>% clean_names()
 
 ###List bills to track here
-tracker <- ga2025 %>% filter(bill_number == "SB0001" | bill_number == "SB0021")
+tracker <- ga2025 %>% filter(bill_number == "SB0001" | bill_number == "SB0029")
 
 tracker <- replace_na(tracker, list(x_file_bill_number="NULL"))
 
