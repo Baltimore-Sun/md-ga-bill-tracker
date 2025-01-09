@@ -28,7 +28,7 @@ jobs:
 
       - name: Execute Script
         run: |
-          Rscript "tracker-repos/Script.R"
+          Rscript "script.R"
 
       - name: Commit results
         run: |
