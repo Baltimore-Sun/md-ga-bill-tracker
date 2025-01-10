@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron:  "*/60 5-23 * * *"
+    - cron:  "14 7-23 * * MON-SAT"
   workflow_dispatch:
 
 name: bill-tracker
