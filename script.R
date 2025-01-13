@@ -29,7 +29,7 @@ carrolltracker <- carrolltracker %>% arrange(sponsor, bill_number)
 hartracker <- tracker %>% filter(grepl("Harford County|Airkan|Johnson, A|Johnson, S| McComas|Griffith|Reilly|Jennings|James|Gallon", sponsor, ignore.case=TRUE))
 hartracker <- hartracker %>% arrange(sponsor, bill_number)
 
-howtracker <- tracker %>% filter(grepl("Howard County|Hester|Lam|Guzzone, G|Wu|Ziegler|Senator Watson|Feldmark|Hill|Atterbeary|Guzzone, P| Terrasa", sponsor, ignore.case=TRUE))
+howtracker <- tracker %>% filter(grepl("Howard County|Hester|Lam|Guzzone, G|Wu|Ziegler|Senator Watson|Feldmark|\\<Hill\\>|Atterbeary|Guzzone, P| Terrasa", sponsor, ignore.case=TRUE))
 howtracker <- howtracker %>% arrange(sponsor, bill_number)
 
 tracktab <- select(gentrack,hyperlinked_billnum,title,current_status,hyperlinked_xfile)
