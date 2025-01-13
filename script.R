@@ -23,7 +23,7 @@ gentrack <- tracker %>% filter(bill_number == "SB0001" | bill_number == "SB0029"
 aatracker <- tracker %>% filter(grepl("Henson|Nkongolo|Lehman|Bagnall|Anne Arundel|Bartlett|Chang|Chisholm|Howard|Jones, D|Kipke|Pruski|Rogers|Schmidt|Simmons|Melnyk|Barnes|Beidle|Gile|Henson|Lam|Rosapepe|Simonaire", sponsor, ignore.case=TRUE))
 aatracker <- aatracker %>% arrange(sponsor, bill_number)
 
-carrolltracker <- tracker %>% filter(grepl("Carroll County|Ready|West|Bouchat|Rose|Tomlinson|Stonko", sponsor, ignore.case=TRUE))
+carrolltracker <- tracker %>% filter(grepl("Carroll County|Ready|West|Bouchat|\\<Rose\\>|Tomlinson|Stonko", sponsor, ignore.case=TRUE))
 carrolltracker <- carrolltracker %>% arrange(sponsor, bill_number)
 
 hartracker <- tracker %>% filter(grepl("Harford County|Airkan|Johnson, A|Johnson, S| McComas|Griffith|Reilly|Jennings|James|Gallon", sponsor, ignore.case=TRUE))
